@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Demande de rendez-vous</title>
 </head>
 <body>
     <h1>Formulaire de RDV</h1>
@@ -30,7 +30,6 @@
                 <label for="mail">Email :</label>
                 <input type="email" id="mail" name="user_mail">
             </div>
-            
         </fieldset><br>
 
         <fieldset>Le salarié<br>
@@ -44,18 +43,52 @@
             </div>
             <div>
                 <label for="name-borth">Nom de naissance :</label>
-                <input type="text" for="name-borth" name="user_name_borth">
+                <input type="text" for="name-borth" name="user_name-borth">
                 <label for="first-name">Prénom :</label>
                 <input type="text" for="first-name" name="user_first-name"> 
             </div>
             <div>
+                <label for="married-name">Nom martial :</label>
+                <input type="text" for="married-name" name="user_married-name">
+                <label for="date-borth">Date de naissance</label>
+                <input type="date" for="date-borth" name="user_date-borh">
+            </div>
+            <div>
+                <label for="poste">Postye de travail :</label>
+                <input type="text" for="poste" name="poste_de_travail">
+                <label for="code">Code PCS :</label>
+                <input type="text" for="code" name="code_pcs">
+            </div>
+        </fieldset><br>
+
+        <fieldset>Informations complémentaires pour création nouveau salarié<br>
+            <div>
+                <label for="date-embauche">Date d'embauche</label>
+                <input type="text" for="date-embauche" name="date_embauche">
+                <label for="type-contract">Type de contrat (CDD, CDI, apprenti…) :</label>
+                <input type="" for="type-contract" name="type_contract">
+            </div>
+            <div>
+                <label for="cdd">Pour les CDD, date de fin de contrat : </label>
+                <input type="date" for="cdd" name="cdd_fin_contract">
+            </div>
+            <div>
+                <label for="risque">Le salarié a occupé un emploi identique présentant les mêmes risques d’exposition pour votre entreprise ou pour une
+                autre entreprise : </label>
                 
+                <input type="radio" id="yes" name="oui" value="male">
+                <label for="yes">Oui</label>
+                <input type="radio" id="no" name="non" value="female">
+                <label for="no">Non</label>
+
             </div>
 
         </fieldset>
     </form>
 </body>
 </html>
+                
 
 
+            
             
