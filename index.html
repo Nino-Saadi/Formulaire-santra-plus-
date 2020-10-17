@@ -8,7 +8,32 @@
 <body>
     <h1>Formulaire de RDV</h1>
     <form method="POST" action="">
-        
+        <fieldset>Mes Références<br>
+            <div>
+                <label for="raison">Raison sociale</label>
+                <input type="text" id="raison" name="user_raison">
+                
+                <label for="adherent-number">N° d’adhérent :</label>
+                <input type="text" id="adherent-number" name="user_number">
+            </div>
+            <div>
+                <label for="name">Nom du demandeur :</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+                <label for="phone">Tél :</label>
+                <input type="tel" id="phone" name="user_phone">
+                
+                <label for="fax">Fax :</label>
+                <input type="tel" id="fax" name="user_fax">
+                
+                <label for="mail">Email :</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            
+        </fieldset>
     </form>
 </body>
 </html>
+
+            
