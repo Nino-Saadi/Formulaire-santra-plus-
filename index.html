@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demande de rendez-vous</title>
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Formulaire de RDV</h1>
+    
+    <header>
+        <h1>Formulaire de RDV</h1>
+        <a href="https://www.santraplus.fr/"></a>
+    </header>
+    
     <form method="POST" action="">
         <fieldset>Mes Références<br>
             <div>
@@ -81,13 +88,93 @@
                 <input type="radio" id="no" name="non" value="female">
                 <label for="no">Non</label>
             </div>
+            
+            
             <div>
-                <legend>Catégorie suivant les surveillances : Cocher la ou les correspondantes.</legend>
+                <legend><span>Catégorie suivant les surveillances</span> : Cocher la ou les correspondantes.</legend>
+            </div>
+            
+            <div>
+                <legend>Suivi Individuel Simple (SI)</legend>
+                
+                <input type="checkbox" id="I_option-1" name="I_option"
+                value="I_option-1">
+                <label for="I_option-1"> Cas général hors risque particulier</label>
+                <input type="checkbox" id="I_option-2" name="I_option" value="I_option-2">
+                <label for="option-2">Salarié exposé aux agents biologiques groupe 2 (AB2)</label><br>
+                
+                <input type="checkbox" id="I_option-3" name="I_option" value="I_option-3">
+                <label for="I_option-3">Moins de 18 ans non affecté à travaux réglementés. </label>
+                <input type="checkbox" id="I_option-4" name="I_option" value="I_option-4">
+                <label for="I_option-4">Salarié exposé aux champs électromagnétiques si VLE dépassée. </label>
+            </div>
+            
+            <div>
+                <legend>Suivi Individuel Adapté (SIA) :</legend>
+                
+                <input type="checkbox" id="II_option-1" name="II_option"
+                value="II_option-1">
+                <label for="II_option-1"> Travailleur de nuit </label>
+                <input type="checkbox" id="II_option-2" name="II_option" value="II_option-2">
+                <label for="II_option-2">Travailleur handicapé</label><br>
+                
+                <input type="checkbox" id="II_option-3" name="II_option" value="II_option-3">
+                <label for="II_option-3">Travailleur titulaire d’une pension d’invalidité</label>
+                <input type="checkbox" id="II_option-4" name="II_option" value="II_option-4">
+                <label for="II_option-4">Femme enceinte, allaitante ou venant d’accoucher</label>
+            </div>
+            
+            <div>
+                <legend>Suivi Individuel Renforcé (SIR) :</legend>
+
+                <input type="checkbox" id="III_option-1" name="III_option"
+                value="III_option-1">
+                <label for="III_option-1"> Salarié exposé à l’amiante </label>
+                <input type="checkbox" id="III_option-2" name="III_option" value="III_option-2">
+                <label for="III_option-2">Salarié exposé au plomb</label><br>
+                
+                <input type="checkbox" id="II_option-3" name="III_option" value="III_option-3">
+                <label for="III_option-3">Salarié exposé aux agents biologiques gp 3 et 4 (ABP3 et 4)</label>
+                <input type="checkbox" id="III_option-4" name="III_option" value="III_option-4">
+                <label for="III_option-4">Salarié exposé au risque Hyperbare </label><br>
+
+                <input type="checkbox" id="III_option-5" name="III_option"
+                value="III_option-5">
+                <label for="III_option-5">Salarié exposé aux rayonnements ionisants Cat B </label>
+                <input type="checkbox" id="III_option-6" name="III_option" value="III_option-6">
+                <label for="III_option-6">Salarié exposé au risque de chute de hauteur lors du montage et démontage d'échaffaudage</label><br>
+                
+                <input type="checkbox" id="III_option-7" name="III_option" value="III_option-7">
+                <label for="III_option-7">Autorisation de conduite</label>
+                <input type="checkbox" id="II_option-8" name="III_option" value="III_option-8">
+                <label for="III_option-8">Habilitation électrique (travaux sur installations électriques)</label><br>
+
+                <input type="checkbox" id="III_option-9" name="III_option"
+                value="III_option-9">
+                <label for="III_option-9"> Manutention manuelle, port de charge ˃55kg (R4541-9)</label>
+                <input type="checkbox" id="III_option-10" name="III_option" value="III_option-10">
+                <label for="III_option-10">Salarié exposé à CMR</label>
             </div>
 
+            <div>
+                <legend>Suivi Individuel Renforcé Annuel (SIRA) : </legend>
+
+                <input type="checkbox" id="IV_option-9" name="IV_option"
+                value="IV_option-9">
+                <label for="IV_option-9">Rayonnements ionisants Cat A </label>
+                <input type="checkbox" id="IV_option-10" name="IV_option" value="IV_option-10">
+                <label for="IV_option-10">Moins de 18 ans affecté à travaux réglementés</label>
+            </div>
+        </fieldset><br>
+
+        <fieldset>Demande de rende-vous
+            <div>
+
+            </div>
         </fieldset>
     </form>
 </body>
+
 </html>
 
                 
