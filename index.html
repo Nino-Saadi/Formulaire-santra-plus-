@@ -22,7 +22,7 @@
     </header>
     
     <form method="POST" action="">
-        <fieldset>
+        <fieldset id="mes-references">
             <legend>Mes références</legend>
             
             <div>
@@ -50,7 +50,7 @@
         
         
 
-        <fieldset>
+        <fieldset id="salarié">
             <legend>Salarié</legend><br>
             <div>
                 <label for="gender">Civilité :</label>
@@ -73,21 +73,31 @@
                 <input type="date" for="date-borth" name="user_date-borh">
             </div><br>
             <div>
-                <label for="poste">Postye de travail :</label>
+                <label for="poste">Poste de travail :</label>
                 <input type="text" for="poste" name="poste_de_travail">
                 <label for="code">Code PCS :</label>
                 <input type="text" for="code" name="code_pcs">
             </div>
         </fieldset><br>
 
-        <fieldset>
+        <fieldset id="additional-information">
             <legend>Informations complémentaires pour création nouveau salarié</legend><br>
             
             <div>
                 <label for="date-embauche">Date d'embauche</label>
                 <input type="date" for="date-embauche" name="date_embauche">
+                
                 <label for="type-contract">Type de contrat (CDD, CDI, apprenti…) :</label>
-                <input type="" for="type-contract" name="type_contract">
+                <input list="type-de-contrat" for="type_contract" name="type-contrat">
+                <datalist id="type-de-contrat">
+                    <option value="CDI">CDI – Contrat à durée indéterminée</option>
+                    <option value="CDD">CDD – Contrat à durée déterminée</option>
+                    <option value="CTT">CTT – Contrat de travail temporaire ou Intérim</option>
+                    <option value="Apprentissage">Contrat d'apprentissage (alternance)</option>
+                    <option value="Alternance">Contrat de professionnalisation (alternance)</option>
+                    <option value="CUI">CUI – Contrat unique d'insertion</option>
+                    <option value="CAE">CAE – Contrat d'accompagnement dans l'emploi</option>
+                    <option value="CIE">CIE – Contrat initiative emploi</option>
             </div><br>
             <div>
                 <label for="cdd">Pour les CDD, date de fin de contrat : </label>
@@ -181,13 +191,14 @@
             </div>
         </fieldset><br>
 
-        <fieldset>Demande de rendez-vous
+        <fieldset id="rdv">
+            <legend>Demande de rendez-vous</legend><br>
             <div>
 
             </div>
         </fieldset><br>
 
-        <fieldset>
+        <fieldset id="cancel-report">
             <legend>Annuler ou reporter un rendez-vous :</legend><br>
             
             <div>
