@@ -10,23 +10,32 @@
 <body>
     
     <header>
-        <h1>Formulaire de RDV</h1>
-        <a href="https://www.santraplus.fr/"></a>
+        <div>
+            <h1>Formulaire de RDV</h1>
+            
+            <div class="logo">
+                <a href="https://www.santraplus.fr/"></a>
+            </div>
+            
+        </div>
+        
     </header>
     
     <form method="POST" action="">
-        <fieldset>Mes Références<br>
+        <fieldset>
+            <legend>Mes références</legend>
+            
             <div>
                 <label for="raison">Raison sociale</label>
                 <input type="text" id="raison" name="user_raison">
                 
                 <label for="adherent-number">N° d’adhérent :</label>
                 <input type="text" id="adherent-number" name="user_number">
-            </div>
+            </div><br>
             <div>
                 <label for="name">Nom du demandeur :</label>
                 <input type="text" id="name" name="user_name">
-            </div>
+            </div><br>
             <div>
                 <label for="phone">Tél :</label>
                 <input type="tel" id="phone" name="user_phone">
@@ -36,10 +45,13 @@
                 
                 <label for="mail">Email :</label>
                 <input type="email" id="mail" name="user_mail">
-            </div>
+            </div><br>
         </fieldset><br>
+        
+        
 
-        <fieldset>Le salarié<br>
+        <fieldset>
+            <legend>Salarié</legend><br>
             <div>
                 <label for="gender">Civilité :</label>
                 
@@ -47,19 +59,19 @@
                 <label for="male">Monsieur</label>
                 <input type="radio" id="female" name="sex" value="female">
                 <label for="female">Madame</label>
-            </div>
+            </div><br>
             <div>
                 <label for="name-borth">Nom de naissance :</label>
                 <input type="text" for="name-borth" name="user_name-borth">
                 <label for="first-name">Prénom :</label>
                 <input type="text" for="first-name" name="user_first-name"> 
-            </div>
+            </div><br>
             <div>
                 <label for="married-name">Nom martial :</label>
                 <input type="text" for="married-name" name="user_married-name">
                 <label for="date-borth">Date de naissance</label>
                 <input type="date" for="date-borth" name="user_date-borh">
-            </div>
+            </div><br>
             <div>
                 <label for="poste">Postye de travail :</label>
                 <input type="text" for="poste" name="poste_de_travail">
@@ -68,17 +80,19 @@
             </div>
         </fieldset><br>
 
-        <fieldset>Informations complémentaires pour création nouveau salarié<br>
+        <fieldset>
+            <legend>Informations complémentaires pour création nouveau salarié</legend><br>
+            
             <div>
                 <label for="date-embauche">Date d'embauche</label>
-                <input type="text" for="date-embauche" name="date_embauche">
+                <input type="date" for="date-embauche" name="date_embauche">
                 <label for="type-contract">Type de contrat (CDD, CDI, apprenti…) :</label>
                 <input type="" for="type-contract" name="type_contract">
-            </div>
+            </div><br>
             <div>
                 <label for="cdd">Pour les CDD, date de fin de contrat : </label>
                 <input type="date" for="cdd" name="cdd_fin_contract">
-            </div>
+            </div><br>
             <div>
                 <label for="risque">Le salarié a occupé un emploi identique présentant les mêmes risques d’exposition pour votre entreprise ou pour une
                 autre entreprise : </label>
@@ -87,15 +101,15 @@
                 <label for="yes">Oui</label>
                 <input type="radio" id="no" name="non" value="female">
                 <label for="no">Non</label>
-            </div>
+            </div><br>
             
             
             <div>
                 <legend><span>Catégorie suivant les surveillances</span> : Cocher la ou les correspondantes.</legend>
-            </div>
+            </div><br>
             
             <div>
-                <legend>Suivi Individuel Simple (SI)</legend>
+                <legend>Suivi Individuel Simple (SI)</legend><br>
                 
                 <input type="checkbox" id="I_option-1" name="I_option"
                 value="I_option-1">
@@ -107,10 +121,10 @@
                 <label for="I_option-3">Moins de 18 ans non affecté à travaux réglementés. </label>
                 <input type="checkbox" id="I_option-4" name="I_option" value="I_option-4">
                 <label for="I_option-4">Salarié exposé aux champs électromagnétiques si VLE dépassée. </label>
-            </div>
+            </div><br>
             
             <div>
-                <legend>Suivi Individuel Adapté (SIA) :</legend>
+                <legend>Suivi Individuel Adapté (SIA) :</legend><br>
                 
                 <input type="checkbox" id="II_option-1" name="II_option"
                 value="II_option-1">
@@ -122,10 +136,10 @@
                 <label for="II_option-3">Travailleur titulaire d’une pension d’invalidité</label>
                 <input type="checkbox" id="II_option-4" name="II_option" value="II_option-4">
                 <label for="II_option-4">Femme enceinte, allaitante ou venant d’accoucher</label>
-            </div>
+            </div><br>
             
             <div>
-                <legend>Suivi Individuel Renforcé (SIR) :</legend>
+                <legend>Suivi Individuel Renforcé (SIR) :</legend><br>
 
                 <input type="checkbox" id="III_option-1" name="III_option"
                 value="III_option-1">
@@ -154,10 +168,10 @@
                 <label for="III_option-9"> Manutention manuelle, port de charge ˃55kg (R4541-9)</label>
                 <input type="checkbox" id="III_option-10" name="III_option" value="III_option-10">
                 <label for="III_option-10">Salarié exposé à CMR</label>
-            </div>
+            </div><br>
 
             <div>
-                <legend>Suivi Individuel Renforcé Annuel (SIRA) : </legend>
+                <legend>Suivi Individuel Renforcé Annuel (SIRA) : </legend><br>
 
                 <input type="checkbox" id="IV_option-9" name="IV_option"
                 value="IV_option-9">
@@ -173,17 +187,18 @@
             </div>
         </fieldset><br>
 
-        <fieldset>Annuler ou reporter un rendez-vous :<br>
+        <fieldset>
+            <legend>Annuler ou reporter un rendez-vous :</legend><br>
+            
             <div>
                 <legend>Date du rendez-vous </legend>
                 <input type="date" id="date-appointement" name="date-rdv">
-
-            </div>
+            </div><br>
             <div>
                 <legend>Nom du médecin ou infirmière :
                 </legend>
                 <input type="text" id="name-doctor" name="nom-doctor">
-            </div>
+            </div><br>
             <div>
                 <legend>Reporter le rendez-vous :</legend>
                 

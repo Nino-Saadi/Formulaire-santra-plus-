@@ -2,6 +2,19 @@ header h1 {
   text-align: center;
 }
 
-* {
-  line-height: 4rem;
+/**-----------------------
+    @@@Header
+------------------------**/
+
+header .logo {
+  float: left;
+  background: url(./img/logo_santraplus.png);
+}
+
+body {
+  background: url(./img/background_body.jpg) center top no-repeat fixed;
+}
+header .logo {
+  float: left;
+  background: url(./img/logo_santraplus.png) center center no-repeat;
 }
