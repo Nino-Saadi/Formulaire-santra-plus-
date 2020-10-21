@@ -8,226 +8,246 @@
 </head>
 
 <body>
+    <div class="container">
+        
+        <!--Header-->
+        <header>
+            <div>
+                <h1>Formulaire de RDV</h1>
+                <h2>Planning Santra Plus – CS 20874 – 76087 Le Havre CEDEX – Fax : 02 32 74 51 20</h2>
+                
+                <div class="logo">
+                    <a href="https://www.santraplus.fr/"></a>
+                </div>
+                
+            </div>
+            
+        </header>
+
+        
+        <!--Mes références-->
+        <form method="POST" action="">
+            <fieldset id="mes-references">
+                <legend>Mes références</legend>
+                
+                <div>
+                    <label for="raison">Raison sociale :</label>
+                    <input type="text" id="raison" name="user_raison">
+                    
+                    <label for="adherent-number">N° d’adhérent :</label>
+                    <input type="text" id="adherent-number" name="user_number">
+                </div><br>
+                <div>
+                    <label for="name">Nom du demandeur :</label>
+                    <input type="text" id="name" name="user_name">
+                </div><br>
+                <div>
+                    <label for="phone">Tél :</label>
+                    <input type="tel" id="phone" name="user_phone">
+                    
+                    <label for="fax">Fax :</label>
+                    <input type="tel" id="fax" name="user_fax">
+                    
+                    <label for="mail">Email :</label>
+                    <input type="email" id="mail" name="user_mail">
+                </div><br>
+            </fieldset><br>
+            
+            
+            
+            
+            <!--Salarié-->
+            <fieldset id="salarié">
+                <legend>Salarié</legend><br>
+                <div>
+                    <label for="gender">Civilité :</label>
+                    
+                    <input type="radio" id="male" name="sex" value="male">
+                    <label for="male">Monsieur</label>
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">Madame</label>
+                </div><br>
+                <div>
+                    <label for="name-borth">Nom de naissance :</label>
+                    <input type="text" for="name-borth" name="user_name-borth">
+                    <label for="first-name">Prénom :</label>
+                    <input type="text" for="first-name" name="user_first-name"> 
+                </div><br>
+                <div>
+                    <label for="married-name">Nom martial :</label>
+                    <input type="text" for="married-name" name="user_married-name">
+                    <label for="date-borth">Date de naissance</label>
+                    <input type="date" for="date-borth" name="user_date-borh">
+                </div><br>
+                <div>
+                    <label for="poste">Poste de travail :</label>
+                    <input type="text" for="poste" name="poste_de_travail">
+                    <label for="code">Code PCS :</label>
+                    <input type="text" for="code" name="code_pcs">
+                </div>
+            </fieldset><br>
+             
+            
+            
+            <!--Informations complémentaires-->
+            <fieldset id="additional-information">
+                <legend>Informations complémentaires pour création nouveau salarié</legend><br>
+                
+                <div>
+                    <label for="date-embauche">Date d'embauche</label>
+                    <input type="date" for="date-embauche" name="date_embauche">
+                    
+                    <label for="type-contract">Type de contrat (CDD, CDI, apprenti…) :</label>
+                    <input list="type-de-contrat" for="type_contract" name="type-contrat">
+                    <datalist id="type-de-contrat">
+                        <option value="CDI">CDI – Contrat à durée indéterminée</option>
+                        <option value="CDD">CDD – Contrat à durée déterminée</option>
+                        <option value="CTT">CTT – Contrat de travail temporaire ou Intérim</option>
+                        <option value="Apprentissage">Contrat d'apprentissage (alternance)</option>
+                        <option value="Alternance">Contrat de professionnalisation (alternance)</option>
+                        <option value="CUI">CUI – Contrat unique d'insertion</option>
+                        <option value="CAE">CAE – Contrat d'accompagnement dans l'emploi</option>
+                        <option value="CIE">CIE – Contrat initiative emploi</option>
+                </div><br>
+                <div>
+                    <label for="cdd">Pour les CDD, date de fin de contrat : </label>
+                    <input type="date" for="cdd" name="cdd_fin_contract">
+                </div><br>
+                
+                <div>
+                    <label for="risque">Le salarié a occupé un emploi identique présentant les mêmes risques d’exposition pour votre entreprise ou pour une
+                    autre entreprise : </label>
+                    
+                    <input type="radio" id="yes" name="oui" value="yes">
+                    <label for="yes">Oui</label>
+                    <input type="radio" id="no" name="non" value="no">
+                    <label for="no">Non</label>
+                </div><br>
+                
+                
+                <div id="list-categories">
+                    <legend><span>Catégorie suivant les surveillances</span> : Cocher la ou les correspondantes.</legend>
+                </div><br>
+                
+                <div id="categories-1">
+                    <legend>Suivi Individuel Simple (SI)</legend><br>
+                    
+                    <input type="checkbox" id="I_option-1" name="I_option"
+                    value="I_option-1">
+                    <label for="I_option-1"> Cas général hors risque particulier</label>
+                    <input type="checkbox" id="I_option-2" name="I_option" value="I_option-2">
+                    <label for="option-2">Salarié exposé aux agents biologiques groupe 2 (AB2)</label><br>
+                    
+                    <input type="checkbox" id="I_option-3" name="I_option" value="I_option-3">
+                    <label for="I_option-3">Moins de 18 ans non affecté à travaux réglementés. </label>
+                    <input type="checkbox" id="I_option-4" name="I_option" value="I_option-4">
+                    <label for="I_option-4">Salarié exposé aux champs électromagnétiques si VLE dépassée. </label>
+                </div><br>
+                
+                <div id="categories-2">
+                    <legend>Suivi Individuel Adapté (SIA) :</legend><br>
+                    
+                    <input type="checkbox" id="II_option-1" name="II_option"
+                    value="II_option-1">
+                    <label for="II_option-1"> Travailleur de nuit </label>
+                    <input type="checkbox" id="II_option-2" name="II_option" value="II_option-2">
+                    <label for="II_option-2">Travailleur handicapé</label><br>
+                    
+                    <input type="checkbox" id="II_option-3" name="II_option" value="II_option-3">
+                    <label for="II_option-3">Travailleur titulaire d’une pension d’invalidité</label>
+                    <input type="checkbox" id="II_option-4" name="II_option" value="II_option-4">
+                    <label for="II_option-4">Femme enceinte, allaitante ou venant d’accoucher</label>
+                </div><br>
+                
+                <div id="categories-3">
+                    <legend>Suivi Individuel Renforcé (SIR) :</legend><br>
     
-    <header>
-        <div>
-            <h1>Formulaire de RDV</h1>
-            
-            <div class="logo">
-                <a href="https://www.santraplus.fr/"></a>
-            </div>
-            
-        </div>
-        
-    </header>
+                    <input type="checkbox" id="III_option-1" name="III_option"
+                    value="III_option-1">
+                    <label for="III_option-1"> Salarié exposé à l’amiante </label>
+                    <input type="checkbox" id="III_option-2" name="III_option" value="III_option-2">
+                    <label for="III_option-2">Salarié exposé au plomb</label><br>
+                    
+                    <input type="checkbox" id="II_option-3" name="III_option" value="III_option-3">
+                    <label for="III_option-3">Salarié exposé aux agents biologiques gp 3 et 4 (ABP3 et 4)</label>
+                    <input type="checkbox" id="III_option-4" name="III_option" value="III_option-4">
+                    <label for="III_option-4">Salarié exposé au risque Hyperbare </label><br>
     
-    <form method="POST" action="">
-        <fieldset id="mes-references">
-            <legend>Mes références</legend>
+                    <input type="checkbox" id="III_option-5" name="III_option"
+                    value="III_option-5">
+                    <label for="III_option-5">Salarié exposé aux rayonnements ionisants Cat B </label>
+                    <input type="checkbox" id="III_option-6" name="III_option" value="III_option-6">
+                    <label for="III_option-6">Salarié exposé au risque de chute de hauteur lors du montage et démontage d'échaffaudage</label><br>
+                    
+                    <input type="checkbox" id="III_option-7" name="III_option" value="III_option-7">
+                    <label for="III_option-7">Autorisation de conduite</label>
+                    <input type="checkbox" id="II_option-8" name="III_option" value="III_option-8">
+                    <label for="III_option-8">Habilitation électrique (travaux sur installations électriques)</label><br>
+    
+                    <input type="checkbox" id="III_option-9" name="III_option"
+                    value="III_option-9">
+                    <label for="III_option-9"> Manutention manuelle, port de charge ˃55kg (R4541-9)</label>
+                    <input type="checkbox" id="III_option-10" name="III_option" value="III_option-10">
+                    <label for="III_option-10">Salarié exposé à CMR</label>
+                </div><br>
+    
+                <div id="categories-4">
+                    <legend>Suivi Individuel Renforcé Annuel (SIRA) : </legend><br>
+    
+                    <input type="checkbox" id="IV_option-9" name="IV_option"
+                    value="IV_option-9">
+                    <label for="IV_option-9">Rayonnements ionisants Cat A </label>
+                    <input type="checkbox" id="IV_option-10" name="IV_option" value="IV_option-10">
+                    <label for="IV_option-10">Moins de 18 ans affecté à travaux réglementés</label>
+                </div>
+            </fieldset><br>
+             
             
-            <div>
-                <label for="raison">Raison sociale</label>
-                <input type="text" id="raison" name="user_raison">
-                
-                <label for="adherent-number">N° d’adhérent :</label>
-                <input type="text" id="adherent-number" name="user_number">
-            </div><br>
-            <div>
-                <label for="name">Nom du demandeur :</label>
-                <input type="text" id="name" name="user_name">
-            </div><br>
-            <div>
-                <label for="phone">Tél :</label>
-                <input type="tel" id="phone" name="user_phone">
-                
-                <label for="fax">Fax :</label>
-                <input type="tel" id="fax" name="user_fax">
-                
-                <label for="mail">Email :</label>
-                <input type="email" id="mail" name="user_mail">
-            </div><br>
-        </fieldset><br>
-        
-        
-
-        <fieldset id="salarié">
-            <legend>Salarié</legend><br>
-            <div>
-                <label for="gender">Civilité :</label>
-                
-                <input type="radio" id="male" name="sex" value="male">
-                <label for="male">Monsieur</label>
-                <input type="radio" id="female" name="sex" value="female">
-                <label for="female">Madame</label>
-            </div><br>
-            <div>
-                <label for="name-borth">Nom de naissance :</label>
-                <input type="text" for="name-borth" name="user_name-borth">
-                <label for="first-name">Prénom :</label>
-                <input type="text" for="first-name" name="user_first-name"> 
-            </div><br>
-            <div>
-                <label for="married-name">Nom martial :</label>
-                <input type="text" for="married-name" name="user_married-name">
-                <label for="date-borth">Date de naissance</label>
-                <input type="date" for="date-borth" name="user_date-borh">
-            </div><br>
-            <div>
-                <label for="poste">Poste de travail :</label>
-                <input type="text" for="poste" name="poste_de_travail">
-                <label for="code">Code PCS :</label>
-                <input type="text" for="code" name="code_pcs">
-            </div>
-        </fieldset><br>
-
-        <fieldset id="additional-information">
-            <legend>Informations complémentaires pour création nouveau salarié</legend><br>
-            
-            <div>
-                <label for="date-embauche">Date d'embauche</label>
-                <input type="date" for="date-embauche" name="date_embauche">
-                
-                <label for="type-contract">Type de contrat (CDD, CDI, apprenti…) :</label>
-                <input list="type-de-contrat" for="type_contract" name="type-contrat">
-                <datalist id="type-de-contrat">
-                    <option value="CDI">CDI – Contrat à durée indéterminée</option>
-                    <option value="CDD">CDD – Contrat à durée déterminée</option>
-                    <option value="CTT">CTT – Contrat de travail temporaire ou Intérim</option>
-                    <option value="Apprentissage">Contrat d'apprentissage (alternance)</option>
-                    <option value="Alternance">Contrat de professionnalisation (alternance)</option>
-                    <option value="CUI">CUI – Contrat unique d'insertion</option>
-                    <option value="CAE">CAE – Contrat d'accompagnement dans l'emploi</option>
-                    <option value="CIE">CIE – Contrat initiative emploi</option>
-            </div><br>
-            <div>
-                <label for="cdd">Pour les CDD, date de fin de contrat : </label>
-                <input type="date" for="cdd" name="cdd_fin_contract">
-            </div><br>
-            <div>
-                <label for="risque">Le salarié a occupé un emploi identique présentant les mêmes risques d’exposition pour votre entreprise ou pour une
-                autre entreprise : </label>
-                
-                <input type="radio" id="yes" name="oui" value="male">
-                <label for="yes">Oui</label>
-                <input type="radio" id="no" name="non" value="female">
-                <label for="no">Non</label>
-            </div><br>
+            <!--Demande de rendez-vous-->
+            <fieldset id="rdv">
+                <legend>Demande de rendez-vous</legend><br>
+                <div>
+    
+                </div>
+            </fieldset><br>
+             
             
             
-            <div>
-                <legend><span>Catégorie suivant les surveillances</span> : Cocher la ou les correspondantes.</legend>
-            </div><br>
-            
-            <div>
-                <legend>Suivi Individuel Simple (SI)</legend><br>
+            <!--Annuler ou reporter un rendez-vous-->
+            <fieldset id="cancel-report">
+                <legend>Annuler ou reporter un rendez-vous :</legend><br>
                 
-                <input type="checkbox" id="I_option-1" name="I_option"
-                value="I_option-1">
-                <label for="I_option-1"> Cas général hors risque particulier</label>
-                <input type="checkbox" id="I_option-2" name="I_option" value="I_option-2">
-                <label for="option-2">Salarié exposé aux agents biologiques groupe 2 (AB2)</label><br>
-                
-                <input type="checkbox" id="I_option-3" name="I_option" value="I_option-3">
-                <label for="I_option-3">Moins de 18 ans non affecté à travaux réglementés. </label>
-                <input type="checkbox" id="I_option-4" name="I_option" value="I_option-4">
-                <label for="I_option-4">Salarié exposé aux champs électromagnétiques si VLE dépassée. </label>
-            </div><br>
-            
-            <div>
-                <legend>Suivi Individuel Adapté (SIA) :</legend><br>
-                
-                <input type="checkbox" id="II_option-1" name="II_option"
-                value="II_option-1">
-                <label for="II_option-1"> Travailleur de nuit </label>
-                <input type="checkbox" id="II_option-2" name="II_option" value="II_option-2">
-                <label for="II_option-2">Travailleur handicapé</label><br>
-                
-                <input type="checkbox" id="II_option-3" name="II_option" value="II_option-3">
-                <label for="II_option-3">Travailleur titulaire d’une pension d’invalidité</label>
-                <input type="checkbox" id="II_option-4" name="II_option" value="II_option-4">
-                <label for="II_option-4">Femme enceinte, allaitante ou venant d’accoucher</label>
-            </div><br>
-            
-            <div>
-                <legend>Suivi Individuel Renforcé (SIR) :</legend><br>
-
-                <input type="checkbox" id="III_option-1" name="III_option"
-                value="III_option-1">
-                <label for="III_option-1"> Salarié exposé à l’amiante </label>
-                <input type="checkbox" id="III_option-2" name="III_option" value="III_option-2">
-                <label for="III_option-2">Salarié exposé au plomb</label><br>
-                
-                <input type="checkbox" id="II_option-3" name="III_option" value="III_option-3">
-                <label for="III_option-3">Salarié exposé aux agents biologiques gp 3 et 4 (ABP3 et 4)</label>
-                <input type="checkbox" id="III_option-4" name="III_option" value="III_option-4">
-                <label for="III_option-4">Salarié exposé au risque Hyperbare </label><br>
-
-                <input type="checkbox" id="III_option-5" name="III_option"
-                value="III_option-5">
-                <label for="III_option-5">Salarié exposé aux rayonnements ionisants Cat B </label>
-                <input type="checkbox" id="III_option-6" name="III_option" value="III_option-6">
-                <label for="III_option-6">Salarié exposé au risque de chute de hauteur lors du montage et démontage d'échaffaudage</label><br>
-                
-                <input type="checkbox" id="III_option-7" name="III_option" value="III_option-7">
-                <label for="III_option-7">Autorisation de conduite</label>
-                <input type="checkbox" id="II_option-8" name="III_option" value="III_option-8">
-                <label for="III_option-8">Habilitation électrique (travaux sur installations électriques)</label><br>
-
-                <input type="checkbox" id="III_option-9" name="III_option"
-                value="III_option-9">
-                <label for="III_option-9"> Manutention manuelle, port de charge ˃55kg (R4541-9)</label>
-                <input type="checkbox" id="III_option-10" name="III_option" value="III_option-10">
-                <label for="III_option-10">Salarié exposé à CMR</label>
-            </div><br>
-
-            <div>
-                <legend>Suivi Individuel Renforcé Annuel (SIRA) : </legend><br>
-
-                <input type="checkbox" id="IV_option-9" name="IV_option"
-                value="IV_option-9">
-                <label for="IV_option-9">Rayonnements ionisants Cat A </label>
-                <input type="checkbox" id="IV_option-10" name="IV_option" value="IV_option-10">
-                <label for="IV_option-10">Moins de 18 ans affecté à travaux réglementés</label>
-            </div>
-        </fieldset><br>
-
-        <fieldset id="rdv">
-            <legend>Demande de rendez-vous</legend><br>
-            <div>
-
-            </div>
-        </fieldset><br>
-
-        <fieldset id="cancel-report">
-            <legend>Annuler ou reporter un rendez-vous :</legend><br>
-            
-            <div>
-                <legend>Date du rendez-vous </legend>
-                <input type="date" id="date-appointement" name="date-rdv">
-            </div><br>
-            <div>
-                <legend>Nom du médecin ou infirmière :
-                </legend>
-                <input type="text" id="name-doctor" name="nom-doctor">
-            </div><br>
-            <div>
-                <legend>Reporter le rendez-vous :</legend>
-                
-                <input type="radio" id="oui-disponibility" name="yes">
-                <label for="oui-disponibility">Oui, disponibilité :</label>
-                <input type="text" id="disponibility"
-                name="yes"><br>
-
-                <input type="radio" id="non" name="no">
-                <label for="non">Non, motif :</label>
-                <input type="text" id="motif" name="no">
-            </div>
-        </fieldset>
-    </form>
-
-    <footer>
-        <p>Siège social : SANTRA PLUS &bull; CS 20874 &bull; 76087 Le Havre cedex &bull; <a href="https://www.santraplus.fr/">www.santraplus.fr</a> &bull; SIRET 781 061 106 000 48 &bull APE 8621Z</p>
-    </footer>
+                <div>
+                    <label for="meeting-point">Date et heure de rendez-vous</label>
+                    <input id="meeting-point" type="datetime-local" name="date-heure">
+                </div><br>
+                <div>
+                    <label for="name-medecin">Nom du médecin ou infirmière :
+                    </label>
+                    <input type="text" id="name-doctor" name="nom-doctor">
+                </div><br>
+                <div>
+                    <legend>Reporter le rendez-vous :</legend>
+                    
+                    <input type="radio" id="oui-disponibility" name="yes">
+                    <label for="oui-disponibility">Oui, disponibilité :</label>
+                    <input type="text" id="disponibility"
+                    name="yes"><br>
+    
+                    <input type="radio" id="non" name="no">
+                    <label for="non">Non, motif :</label>
+                    <input type="text" id="motif" name="no">
+                </div><br>
+                <div>
+                    <input type="submit" value="Envoyer">
+                </div>
+            </fieldset>
+        </form>
+    
+        <footer>
+            <p>Siège social : SANTRA PLUS &bull; CS 20874 &bull; 76087 Le Havre cedex &bull; <a href="https://www.santraplus.fr/">www.santraplus.fr</a> &bull; SIRET 781 061 106 000 48 &bull APE 8621Z</p>
+        </footer>
+    </div>
 </body>
 
 </html>

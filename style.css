@@ -1,11 +1,21 @@
+/**-----------------------
+    @@@Container
+------------------------**/
+
+/**-----------------------
+@@@Header
+------------------------**/
+
 header h1 {
   text-align: center;
 }
+header h2 {
+  text-align: center;
+  text-decoration: none;
+}
 
-/**-----------------------
-    @@@Header
-------------------------**/
-
+.logo {
+}
 header .logo {
   float: left;
   background: url(./img/logo_santraplus.png);
@@ -18,3 +28,34 @@ header .logo {
   float: left;
   background: url(./img/logo_santraplus.png) center center no-repeat;
 }
+
+/**-----------------------
+@@@Mes références
+------------------------**/
+
+/**-----------------------
+@@@Salarié
+------------------------**/
+
+/**-----------------------
+@@@Information 
+complémentaires
+------------------------**/
+#list-categories span {
+  color: blue;
+}
+
+#list-categories legend {
+  text-align: center;
+}
+
+/**-----------------------
+    @@@Demande 
+    de 
+    rendez-vous
+------------------------**/
+
+/**-----------------------
+    @@@Annuler ou 
+    reporter un rendez-vous
+------------------------**/
