@@ -11,17 +11,10 @@
     <div class="container">
         
         <!--Header-->
-        <header>
-            <div>
-                <h1>Formulaire de RDV</h1>
-                <h2>Planning Santra Plus – CS 20874 – 76087 Le Havre CEDEX – Fax : 02 32 74 51 20</h2>
-                
-                <div class="logo">
-                    <a href="https://www.santraplus.fr/"></a>
-                </div>
-                
-            </div>
-            
+        <header class="site-header">
+            <h1>Formulaire de RDV</h1>
+            <h2>Planning Santra Plus – CS 20874 – 76087 Le Havre CEDEX – Fax : 02 32 74 51 20</h2>
+            <figure><a href="https://www.santraplus.fr/">c</a></figure>
         </header>
 
         
@@ -30,34 +23,38 @@
             <fieldset id="mes-references">
                 <legend>Mes références</legend>
                 
-                <div>
-                    <label for="raison">Raison sociale :</label>
-                    <input type="text" id="raison" name="user_raison">
-                    
-                    <label for="adherent-number">N° d’adhérent :</label>
-                    <input type="text" id="adherent-number" name="user_number">
-                </div><br>
-                <div>
-                    <label for="name">Nom du demandeur :</label>
-                    <input type="text" id="name" name="user_name">
-                </div><br>
-                <div>
-                    <label for="phone">Tél :</label>
-                    <input type="tel" id="phone" name="user_phone">
-                    
-                    <label for="fax">Fax :</label>
-                    <input type="tel" id="fax" name="user_fax">
-                    
-                    <label for="mail">Email :</label>
-                    <input type="email" id="mail" name="user_mail">
-                </div><br>
+                    <div>
+                        <label for="raison">Raison sociale :</label>
+                        <input type="text" id="raison" name="user_raison">
+                        
+                        <label for="adherent-number">N° d’adhérent :</label>
+                        <input type="text" id="adherent-number" name="user_number">
+                    </div><br>
+                    <div>
+                        <label for="name">Nom du demandeur :</label>
+                        <input type="text" id="name" name="user_name">
+                    </div><br>
+                    <div>
+                        <label for="phone">Tél :</label>
+                        <input type="tel" id="phone" name="user_phone">
+                        
+                        <label for="fax">Fax :</label>
+                        <input type="tel" id="fax" name="user_fax">
+                        
+                        <label for="mail">Email :</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div><br>
+
+                </div>
             </fieldset><br>
+                
+                
             
             
             
             
             <!--Salarié-->
-            <fieldset id="salarié">
+            <fieldset id="salarie">
                 <legend>Salarié</legend><br>
                 <div>
                     <label for="gender">Civilité :</label>
@@ -130,7 +127,7 @@
                 </div><br>
                 
                 <div id="categories-1">
-                    <legend>Suivi Individuel Simple (SI)</legend><br>
+                    <p>Suivi Individuel Simple (SI)</p><br>
                     
                     <input type="checkbox" id="I_option-1" name="I_option"
                     value="I_option-1">
@@ -145,7 +142,7 @@
                 </div><br>
                 
                 <div id="categories-2">
-                    <legend>Suivi Individuel Adapté (SIA) :</legend><br>
+                    <p>Suivi Individuel Adapté (SIA) :</p><br>
                     
                     <input type="checkbox" id="II_option-1" name="II_option"
                     value="II_option-1">
@@ -160,7 +157,7 @@
                 </div><br>
                 
                 <div id="categories-3">
-                    <legend>Suivi Individuel Renforcé (SIR) :</legend><br>
+                    <p>Suivi Individuel Renforcé (SIR) :</p><br>
     
                     <input type="checkbox" id="III_option-1" name="III_option"
                     value="III_option-1">
@@ -187,12 +184,12 @@
                     <input type="checkbox" id="III_option-9" name="III_option"
                     value="III_option-9">
                     <label for="III_option-9"> Manutention manuelle, port de charge ˃55kg (R4541-9)</label>
-                    <input type="checkbox" id="III_option-10" name="III_option" value="III_option-10">
+                    <input type="checkbox" id="III_optip name="III_option" value="III_option-10">
                     <label for="III_option-10">Salarié exposé à CMR</label>
                 </div><br>
     
                 <div id="categories-4">
-                    <legend>Suivi Individuel Renforcé Annuel (SIRA) : </legend><br>
+                    <p>Suivi Individuel Renforcé Annuel (SIRA) </p><br>
     
                     <input type="checkbox" id="IV_option-9" name="IV_option"
                     value="IV_option-9">
@@ -242,10 +239,10 @@
                     <input type="submit" value="Envoyer">
                 </div>
             </fieldset>
-        </form>
+        </form><br>
     
         <footer>
-            <p>Siège social : SANTRA PLUS &bull; CS 20874 &bull; 76087 Le Havre cedex &bull; <a href="https://www.santraplus.fr/">www.santraplus.fr</a> &bull; SIRET 781 061 106 000 48 &bull APE 8621Z</p>
+            <i>Siège social : SANTRA PLUS &bull; CS 20874 &bull; 76087 Le Havre cedex &bull; <a href="https://www.santraplus.fr/">www.santraplus.fr</a> &bull; SIRET 781 061 106 000 48 &bull APE 8621Z</i>
         </footer>
     </div>
 </body>
@@ -258,5 +255,6 @@
                 
 
 
+            
             
             

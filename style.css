@@ -1,3 +1,21 @@
+body {
+  background: url(./img/background_body.jpg) center top no-repeat fixed;
+}
+
+fieldset > legend {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+fieldset > legend {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 /**-----------------------
     @@@Container
 ------------------------**/
@@ -6,37 +24,33 @@
 @@@Header
 ------------------------**/
 
-header h1 {
-  text-align: center;
-}
-header h2 {
-  text-align: center;
-  text-decoration: none;
-}
-
-.logo {
-}
-header .logo {
-  float: left;
-  background: url(./img/logo_santraplus.png);
+.site-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-body {
-  background: url(./img/background_body.jpg) center top no-repeat fixed;
-}
-header .logo {
-  float: left;
-  background: url(./img/logo_santraplus.png) center center no-repeat;
+.site-header a {
+  width: 100px;
+  height: auto;
+  background-image: url(./img/logo_santraplus.png);
+  align-self: flex-start;
+  align-items: flex-start;
 }
 
 /**-----------------------
 @@@Mes références
 ------------------------**/
-
+#mes-references {
+  border-color: orange;
+}
 /**-----------------------
 @@@Salarié
 ------------------------**/
-
+#salarie {
+  border-color: green;
+}
 /**-----------------------
 @@@Information 
 complémentaires
@@ -47,6 +61,14 @@ complémentaires
 
 #list-categories legend {
   text-align: center;
+}
+
+#additional-information {
+  border-color: blue;
+}
+
+.cat > legend {
+  font-weight: bold;
 }
 
 /**-----------------------
