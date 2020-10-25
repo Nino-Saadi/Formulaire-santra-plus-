@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Roboto+Slab:wght@500&display=swap");
 
+/**-----------------------
+@@@Général
+------------------------**/
+
 body {
   background-image: linear-gradient(
     to right bottom,
@@ -27,14 +31,6 @@ fieldset > legend {
 }
 
 /**-----------------------
-@@@Container
-------------------------**/
-fieldset {
-  border-width: 5px;
-  background: white;
-}
-
-/**-----------------------
 @@@Header
 ------------------------**/
 
@@ -49,8 +45,12 @@ fieldset {
   align-self: flex-start;
 }
 
+/**-----------------------
+@@@Container
+------------------------**/
+
 fieldset {
-  background-image: url(./img/background_rubrique.jpg);
+  background-image: url(/img/background_rubrique.jpg);
 }
 
 /**-----------------------
@@ -92,6 +92,10 @@ complémentaires
   font-weight: bold;
 }
 
+#additional-information p span {
+  text-decoration: underline;
+}
+
 /**-----------------------
     @@@Demande 
     de 
@@ -105,8 +109,9 @@ complémentaires
   visibility: hidden;
 }
 
-input[type="radio"]#reprise-4:checked #suite {
-  visibility: visible;
+.reprise {
+  display: flex;
+  flex-direction: row;
 }
 /**-----------------------
     @@@Annuler ou 

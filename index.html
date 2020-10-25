@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demande de rendez-vous</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         
-        <figure class="logo"><a href="https://www.santraplus.fr/index.php" target="_blank"><img src="./img/logo_santraplus.png" alt="logo-santra-plus"></a></figure>
-        <!--Header-->
-        <header class="site-header">
+          <figure class="logo"><a href="https://www.santraplus.fr/index.php" target="_blank"><img src="./img/logo_santraplus.png" alt="logo-santra-plus"></a></figure>
+          
+          <!--Header-->
+          <header class="site-header">
             <h1>Formulaire de RDV</h1>
             <h2>Planning Santra Plus – CS 20874 – 76087 Le Havre CEDEX – Fax : 02.32.74.51.20</h2>
-        </header>
+          </header>
 
         
-        <!--Mes références-->
-        <form method="POST" action="">
-            <fieldset id="mes-references">
-                <legend>Mes références</legend>
+          <!--Mes références-->
+            <form method="POST" action="">
+                <fieldset id="mes-references">
+                 <legend>Mes références</legend>
                 
                     <div>
                         <label for="raison">Raison sociale :</label>
@@ -45,8 +46,7 @@
                         <input type="email" id="mail" name="user_mail">
                     </div><br>
 
-                </div>
-            </fieldset><br>
+                </fieldset><br>
                 
                 
             
@@ -130,7 +130,7 @@
                 <br>
                 
                 <div id="categories-1">
-                    <p>Suivi Individuel Simple (SI)</p><br>
+                    <p><span>Individuel Simple</span> (SI) :</p><br>
                     
                     <input type="checkbox" id="I_option-1" name="I_option"
                     value="I_option-1">
@@ -145,7 +145,7 @@
                 </div><br>
                 
                 <div id="categories-2">
-                    <p>Suivi Individuel Adapté (SIA) :</p><br>
+                    <p><span>Individuel Adapté</span> (SIA) :</p><br>
                     
                     <input type="checkbox" id="II_option-1" name="II_option"
                     value="II_option-1">
@@ -160,7 +160,7 @@
                 </div><br>
                 
                 <div id="categories-3">
-                    <p>Suivi Individuel Renforcé (SIR) :</p><br>
+                    <p><span>Individuel Renforcé</span> (SIR):</p><br>
     
                     <input type="checkbox" id="III_option-1" name="III_option"
                     value="III_option-1">
@@ -192,7 +192,7 @@
                 </div><br>
     
                 <div id="categories-4">
-                    <p>Suivi Individuel Renforcé Annuel (SIRA) </p><br>
+                    <p><span> Individuel Renforcé Annuel</span> (SIRA) :</p><br>
     
                     <input type="checkbox" id="IV_option-9" name="IV_option"
                     value="IV_option-9">
@@ -207,24 +207,24 @@
             <!--Demande de rendez-vous-->
             <fieldset id="rdv">
                 <legend>Demande de rendez-vous</legend><br>
-                <div>
+                <div class="reprise">
                     <input type="radio" id="reprise-1" name="reprise">
                     <label for="reprise-1">Reprise après un congé de maternité</label>
 
                     <input type="radio" id="reprise-2" name="reprise">
-                    <label for="reprise-1">Reprise après une  absence pour cause de maladie professionnelle</label>
+                    <label for="reprise-2">Reprise après une  absence pour cause de maladie professionnelle</label>
 
                     <input type="radio" id="reprise-3" name="reprise">
-                    <label for="reprise-1">Reprise après  une absence de + 30 jours suite :
+                    <label for="reprise-3">Reprise après  une absence de + 30 jours suite :
                     </label>
 
                     <input type="radio" id="reprise-4" name="reprise">
-                    <label for="reprise-1">Examen à la demande de l’employeur (merci de préciser le motif) :
+                    <label for="reprise-">Examen à la demande de l’employeur (merci de préciser le motif) :
                     </label>
                     <input type="text" id="suite" name="reprise">
                     
                 </div>
-             </fieldset><br>
+            </fieldset><br>
 
 
 
@@ -237,13 +237,15 @@
                 
                 <div>
                     <label for="meeting-point">Date et heure de rendez-vous</label>
-                    <input id="meeting-point" type="datetime-local" name="date-heure">
+                    <input id="meeting-point" type="date" name="date-heure">
+                    <input id="hour" type="time" name="date-heure">
                 </div><br>
                 <div>
                     <label for="name-medecin">Nom du médecin ou infirmière :
                     </label>
                     <input type="text" id="name-doctor" name="nom-doctor">
                 </div><br>
+                
                 <div>
                     <legend>Reporter le rendez-vous :</legend>
                     
@@ -256,10 +258,12 @@
                     <label for="non">Non, motif :</label>
                     <input type="text" id="motif" name="answer-2">
                 </div><br>
+                
                 <div>
                     <input type="submit" value="Envoyer">
                 </div>
             </fieldset>
+             
         </form><br>
 
 
