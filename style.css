@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Roboto+Slab:wght@500&display=swap");
+
 body {
-  background: url(./img/background_body.jpg) center top no-repeat fixed;
+  background-image: linear-gradient(
+    to right bottom,
+    #d8edf6,
+    #cde6f0,
+    #c2deeb,
+    #b7d7e5,
+    #acd0e0
+  );
 }
 
 fieldset > legend {
@@ -14,11 +23,16 @@ fieldset > legend {
 h1,
 h2,
 fieldset > legend {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Antic Slab", serif;
 }
+
 /**-----------------------
-    @@@Container
+@@@Container
 ------------------------**/
+fieldset {
+  border-width: 5px;
+  background: white;
+}
 
 /**-----------------------
 @@@Header
@@ -26,31 +40,38 @@ fieldset > legend {
 
 .site-header {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 }
 
-.site-header a {
-  width: 100px;
-  height: auto;
-  background-image: url(./img/logo_santraplus.png);
+.logo {
   align-self: flex-start;
-  align-items: flex-start;
+}
+
+fieldset {
+  background-image: url(./img/background_rubrique.jpg);
 }
 
 /**-----------------------
 @@@Mes références
 ------------------------**/
 #mes-references {
-  border-color: orange;
+  border-color: #52bfd9;
 }
+
 /**-----------------------
 @@@Salarié
 ------------------------**/
 #salarie {
-  border-color: green;
+  border-color: #2f99b3;
 }
+
+#info {
+  display: flex;
+  flex-direction: column;
+}
+
 /**-----------------------
 @@@Information 
 complémentaires
@@ -64,7 +85,7 @@ complémentaires
 }
 
 #additional-information {
-  border-color: blue;
+  border-color: #3ca5be;
 }
 
 .cat > legend {
@@ -76,8 +97,32 @@ complémentaires
     de 
     rendez-vous
 ------------------------**/
+#rdv {
+  border-color: #27879e;
+}
 
+#suite {
+  visibility: hidden;
+}
+
+input[type="radio"]#reprise-4:checked #suite {
+  visibility: visible;
+}
 /**-----------------------
     @@@Annuler ou 
     reporter un rendez-vous
 ------------------------**/
+#cancel-report {
+  border-color: #187085;
+}
+/**-----------------------
+    @@@Footer
+------------------------**/
+
+footer {
+  text-align: center;
+}
+
+footer > a {
+  text-decoration: none;
+}

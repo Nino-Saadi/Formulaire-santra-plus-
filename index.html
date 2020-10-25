@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +10,11 @@
 <body>
     <div class="container">
         
+        <figure class="logo"><a href="https://www.santraplus.fr/index.php" target="_blank"><img src="./img/logo_santraplus.png" alt="logo-santra-plus"></a></figure>
         <!--Header-->
         <header class="site-header">
             <h1>Formulaire de RDV</h1>
-            <h2>Planning Santra Plus – CS 20874 – 76087 Le Havre CEDEX – Fax : 02 32 74 51 20</h2>
-            <figure><a href="https://www.santraplus.fr/">c</a></figure>
+            <h2>Planning Santra Plus – CS 20874 – 76087 Le Havre CEDEX – Fax : 02.32.74.51.20</h2>
         </header>
 
         
@@ -64,26 +64,29 @@
                     <input type="radio" id="female" name="sex" value="female">
                     <label for="female">Madame</label>
                 </div><br>
-                <div>
-                    <label for="name-borth">Nom de naissance :</label>
-                    <input type="text" for="name-borth" name="user_name-borth">
-                    <label for="first-name">Prénom :</label>
-                    <input type="text" for="first-name" name="user_first-name"> 
-                </div><br>
-                <div>
-                    <label for="married-name">Nom martial :</label>
-                    <input type="text" for="married-name" name="user_married-name">
-                    <label for="date-borth">Date de naissance</label>
-                    <input type="date" for="date-borth" name="user_date-borh">
-                </div><br>
-                <div>
-                    <label for="poste">Poste de travail :</label>
-                    <input type="text" for="poste" name="poste_de_travail">
-                    <label for="code">Code PCS :</label>
-                    <input type="text" for="code" name="code_pcs">
-                </div>
+                <div id="info">
+                    <div>
+                        <label for="name-borth">Nom de naissance :</label>
+                        <input type="text" for="name-borth" name="user_name-borth">
+                        <label for="first-name">Prénom :</label>
+                        <input type="text" for="first-name" name="user_first-name"> 
+                    </div><br>
+                    <div>
+                        <label for="married-name">Nom martial :</label>
+                        <input type="text" for="married-name" name="user_married-name">
+                        <label for="date-borth">Date de naissance</label>
+                        <input type="date" for="date-borth" name="user_date-borh">
+                    </div><br>
+                    <div>
+                        <label for="poste">Poste de travail :</label>
+                        <input type="text" for="poste" name="poste_de_travail">
+                        <label for="code">Code PCS :</label>
+                        <input type="text" for="code" name="code_pcs">
+                    </div>
+                    
+                    </div>
             </fieldset><br>
-             
+                                 
             
             
             <!--Informations complémentaires-->
@@ -115,16 +118,16 @@
                     <label for="risque">Le salarié a occupé un emploi identique présentant les mêmes risques d’exposition pour votre entreprise ou pour une
                     autre entreprise : </label>
                     
-                    <input type="radio" id="yes" name="oui" value="yes">
+                    <input type="radio" id="yes" name="answer" value="yes">
                     <label for="yes">Oui</label>
-                    <input type="radio" id="no" name="non" value="no">
+                    <input type="radio" id="no" name="answer" value="no">
                     <label for="no">Non</label>
                 </div><br>
                 
                 
                 <div id="list-categories">
                     <legend><span>Catégorie suivant les surveillances</span> : Cocher la ou les correspondantes.</legend>
-                </div><br>
+                <br>
                 
                 <div id="categories-1">
                     <p>Suivi Individuel Simple (SI)</p><br>
@@ -184,7 +187,7 @@
                     <input type="checkbox" id="III_option-9" name="III_option"
                     value="III_option-9">
                     <label for="III_option-9"> Manutention manuelle, port de charge ˃55kg (R4541-9)</label>
-                    <input type="checkbox" id="III_optip name="III_option" value="III_option-10">
+                    <input type="checkbox" id="III_option-10" name="III_option" value="III_option-10">
                     <label for="III_option-10">Salarié exposé à CMR</label>
                 </div><br>
     
@@ -197,6 +200,7 @@
                     <input type="checkbox" id="IV_option-10" name="IV_option" value="IV_option-10">
                     <label for="IV_option-10">Moins de 18 ans affecté à travaux réglementés</label>
                 </div>
+            </div>
             </fieldset><br>
              
             
@@ -204,9 +208,26 @@
             <fieldset id="rdv">
                 <legend>Demande de rendez-vous</legend><br>
                 <div>
-    
+                    <input type="radio" id="reprise-1" name="reprise">
+                    <label for="reprise-1">Reprise après un congé de maternité</label>
+
+                    <input type="radio" id="reprise-2" name="reprise">
+                    <label for="reprise-1">Reprise après une  absence pour cause de maladie professionnelle</label>
+
+                    <input type="radio" id="reprise-3" name="reprise">
+                    <label for="reprise-1">Reprise après  une absence de + 30 jours suite :
+                    </label>
+
+                    <input type="radio" id="reprise-4" name="reprise">
+                    <label for="reprise-1">Examen à la demande de l’employeur (merci de préciser le motif) :
+                    </label>
+                    <input type="text" id="suite" name="reprise">
+                    
                 </div>
-            </fieldset><br>
+             </fieldset><br>
+
+
+
              
             
             
@@ -226,20 +247,23 @@
                 <div>
                     <legend>Reporter le rendez-vous :</legend>
                     
-                    <input type="radio" id="oui-disponibility" name="yes">
+                    <input type="radio" id="oui-disponibility" name="answer-2">
                     <label for="oui-disponibility">Oui, disponibilité :</label>
                     <input type="text" id="disponibility"
-                    name="yes"><br>
+                    name="answer-2"><br>
     
-                    <input type="radio" id="non" name="no">
+                    <input type="radio" id="non" name="answer-2">
                     <label for="non">Non, motif :</label>
-                    <input type="text" id="motif" name="no">
+                    <input type="text" id="motif" name="answer-2">
                 </div><br>
                 <div>
                     <input type="submit" value="Envoyer">
                 </div>
             </fieldset>
         </form><br>
+
+
+        <!--Footer-->
     
         <footer>
             <i>Siège social : SANTRA PLUS &bull; CS 20874 &bull; 76087 Le Havre cedex &bull; <a href="https://www.santraplus.fr/">www.santraplus.fr</a> &bull; SIRET 781 061 106 000 48 &bull APE 8621Z</i>
